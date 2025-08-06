@@ -1,12 +1,22 @@
+import { ThemedText } from '@/components/ThemedText'
+import { ThemedView } from '@/components/ThemedView'
 import React from 'react'
-import { Text, View } from 'react-native'
+import { StyleSheet } from 'react-native-unistyles'
 
 const SettingsScreen = () => {
   return (
-    <View>
-      <Text>Settings</Text>
-    </View>
+    <ThemedView style={styles.container}>
+      <ThemedText>Settings</ThemedText>
+    </ThemedView>
   )
 }
 
-export default SettingsScreen
+const styles = StyleSheet.create(theme => ({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+}));
+
+export default SettingsScreen;

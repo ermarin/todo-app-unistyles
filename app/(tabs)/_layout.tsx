@@ -1,11 +1,21 @@
 import { Ionicons } from '@expo/vector-icons'
 import { Tabs } from 'expo-router'
 import React from 'react'
+import { useUnistyles } from 'react-native-unistyles'
 
 const TabsLayout = () => {
+  const { theme } = useUnistyles();
   return (
     <Tabs
       screenOptions={{
+        tabBarInactiveTintColor: theme.colors.tint,
+        tabBarActiveTintColor: theme.colors.activeTint,
+        sceneStyle: {
+          backgroundColor: theme.colors.background
+        },
+        tabBarStyle: {
+          backgroundColor: theme.colors.foreground
+        },
         headerShown: false,
       }}
     >
