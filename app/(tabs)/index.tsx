@@ -3,6 +3,7 @@ import { ThemedView } from "@/components/ThemedView";
 import { StyleSheet } from "react-native-unistyles";
 
 export default function Index() {
+
   return (
     <ThemedView style={styles.container}>
       <ThemedText>Edit app/index.tsx to edit this screen.</ThemedText>
